@@ -1,50 +1,45 @@
-import React, {Component} from 'react'
+import React, {
+    Component
+} from 'react'
 
 class Test extends Component {
-constructor(){
-  super();
-  this.state = {
+    constructor() {
+        super();
+        this.state = {
 
-    count: 0,
-  }
-}
+            count: 0,
+        }
+    }
 
 
 
-//this is where we are going to put your methods yay!
+    //this is where we are going to put your methods yay!
 
-Increment = () => {
-  this.setState({
-    count: this.state.count + 1
+    Increment = () => {
+        this.setState({
+            count: this.state.count + 1
+        })
+    }
 
-  })
-}
+    Decrement = () => {
+        this.setState({
+            count: this.state.count - 1
+        })
+    }
 
-Decrement = () => { 
-  
-  this.setState( {
-    count: this.state.count - 1
-    
-    
-  })
-}
+    render() {
+        return (
 
-  render() {
-    return(
-
-      <div className="Containner">
-
-<nav className="navbar">Counter</nav>
-<div className="counter">
-
-<h1>{this.state.count}</h1>
-<button className="button" onClick={this.Increment}> Increment </button>
-<button className="button" onClick={this.Decrement}> Decrement </button>
-
-</div>
-      </div>
-    )
-  }
+            <div className="Containner">
+                <nav className"navbar">Counter</nav> 
+                <div className"counter">
+                  <h1>{this.state.count}</h1> 
+                  <button className="button" onClick = {this.Increment}> Increment </button> 
+                  <button className="button" onClick={this.Decrement}> Decrement </button>
+                </div> 
+            </div>
+        )
+    }
 }
 
 export default Test;
