@@ -20,13 +20,11 @@ Increment = () => {
   })
 }
 
-Decrement = () => { 
-  
-  this.setState( {
-    count: this.state.count - 1
-    
-    
-  })
+Decrement = () => {
+  if(this.state.count > 0 ){
+    this.setState( {
+      count: this.state.count - 1
+    }
 }
 
   render() {
