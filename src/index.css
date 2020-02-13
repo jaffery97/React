@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+body {
+  font-family: 'Righteous', cursive;
+  height: 100vh;
+ width: auto;
+ background: #667db6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.container {
+
+  position: relative;
+  top: 100px;
+}
+
+.navbar {
+  font-size: 32px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -34px);
+  padding: 10px;
+  color:white;
+  width: 25%;
+  background-color: black;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: 0px 23px 33px 0px black;
+}
+
+.counter {
+text-align: center;
+}
+
+.counter h1 {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 15px);
+  background-color: black;
+  color: white;
+
+  font-size: 92px;
+  width: 40%;
+  border-radius: 0px 0px 50px 50px;
+  box-shadow: 0px 23px 33px 0px black;
+  border: 2px solid white;
+}
+
+.counter button {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 15px;
+  margin:5px;
+  transition: all 1s ease;
+  width: 15%;
+  border-radius: 200px;
+
+}
+
+.counter button:hover {
+  background-color: #65878F;
+}
+
+.footer {
+  text-align: center;
+  font-size: 15px;
+  position: relative;
+  bottom: -120px;
+}
